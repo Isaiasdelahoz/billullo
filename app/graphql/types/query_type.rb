@@ -10,8 +10,8 @@ module Types
       "Hello World!"
     end
 
-    field :categories, String, null: false,
-      description: "An example field added by the generator"
+    field :categories, [CategoryType], null: false,
+      description: "categories"
     def categories
       Category.all
     end
